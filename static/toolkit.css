@@ -7,6 +7,11 @@ html {
 body {
   margin: 0;
 }
+
+ul,li{
+	list-style:none;
+}
+
 article,
 aside,
 details,
@@ -440,19 +445,19 @@ h6 .de,
 }
 h1,
 .cy {
-  font-size: 36px;
+  font-size: 22px;
 }
 h2,
 .cz {
-  font-size: 30px;
+  font-size: 20px;
 }
 h3,
 .da {
-  font-size: 24px;
+  font-size: 18px;
 }
 h4,
 .db {
-  font-size: 18px;
+  font-size: 16px;
 }
 h5,
 .dc {
