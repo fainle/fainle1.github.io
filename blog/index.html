@@ -1,528 +1,111 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="../static/style.css">
-<title> — fainle</title>
-<body>
-  <header>
-    <h1>fainle</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li><a href="../">Welcome</a></li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title> — fainle</title>
+    <!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'> -->
+       <link rel="stylesheet" href="../static/toolkit.css">
+    <link rel="stylesheet" href="../static/application.css">
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+    </style>
+  </head>
+<body class="anf">
+<div class="anp" id="app-growl"></div>
+<nav class="ck pd ot app-navbar">
+  <div class="by">
+    <div class="os">
+      <button type="button" class="ov collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="cv">Toggle navigation</span>
+        <span class="ow"></span>
+        <span class="ow"></span>
+        <span class="ow"></span>
+      </button>
+      <a class="e" href="/">
+        <img src="../static/brand-white.png" alt="brand">
+      </a>
+    </div>
+    <div class="f collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav st">
+        <li><a href="../">首页</a></li>
         
-          <li class="active"><a href="../blog/">Blog</a></li>
+          <li class="active"><a href="../blog/">文章</a></li>
         
-          <li><a href="../projects/">Projects</a></li>
+          <li><a href="../projects/">项目</a></li>
         
-          <li><a href="../about/">About</a></li>
+          <li><a href="../about/">关于我</a></li>
         
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/first-post/">Hello Website</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      fainle
-    
-    on 2017-06-27
-  </p>
-  <p>This is an example blog post.  Not much here but that's not the point :)</p>
+        </ul>
 
+       <!--  <ul class="nav navbar-nav oh ald st">
+          <li >
+            <a class="g" href="notifications/index.html">
+              <span class="h wr"></span>
+            </a>
+          </li>
+          <li>
+            <button class="cg fm oy ank" data-toggle="popover">
+              <img class="cu" src="assets/img/avatar-dhg.png">
+            </button>
+          </li>
+        </ul>
+
+        <form class="ox oh i" role="search">
+          <div class="et">
+            <input type="text" class="form-control" data-action="grow" placeholder="Search">
+          </div>
+        </form>
+
+        <ul class="nav navbar-nav su sv sw">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="profile/index.html">分类</a></li>
+          <li><a href="docs/index.html">标签</a></li>
+          <li><a href="#" data-action="growl">Growl</a></li>
+          <li><a href="login/index.html">Logout</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav hidden">
+          <li><a href="#" data-action="growl">Growl</a></li>
+          <li><a href="login/index.html">Logout</a></li>
+        </ul> -->
+      </div>
   </div>
-
-  
+</nav>
+<div class="by ams">
+  <div class="gd">
+    <div class="ha100">
+     
+<div class="ca qp anw">
+<ul class="qg b amk" >
+	
     
-  <div class="blog-post">
-  
-    <h2><a href="../blog/python/">从零开始掌握python机器学习(转)</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      fainle
-    
-    on 
-  </p>
-  <blockquote><p>转载于 [[<a href="https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4|https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4">https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4|https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4</a>]]</p>
-<p>原文可参阅：<a href="http://suo.im/KUWgl">http://suo.im/KUWgl</a> 和 <a href="http://suo.im/96wD3。">http://suo.im/96wD3。</a></p>
-</blockquote>
-<p>====== 基础篇 ======
-===== 第一步：基本 Python 技能 =====</p>
-<p>首先，你需要安装 Python。</p>
-<p>建议你安装 Anaconda。</p>
-<p>其也包含了 iPython Notebook，这是一个用在我们许多教程中的交互式环境。</p>
-<p>免费在线书籍</p>
-<ul>
-<li>Learn Python the Hard Way，作者 Zed A. Shaw <a href="https://learnpythonthehardway.org/book/">https://learnpythonthehardway.org/book/</a> </li>
-<li>谷歌开发者 Python 课程（强烈推荐视觉学习者学习）<a href="http://suo.im/toMzq">http://suo.im/toMzq</a> </li>
-<li>Python 科学计算入门 <a href="http://suo.im/2cXycM">http://suo.im/2cXycM</a> </li>
-<li>在 Y 分钟内学会 X（X=Python）：<a href="http://suo.im/zm6qX">http://suo.im/zm6qX</a> </li>
-<li>Python 文档：<a href="https://www.python.org/doc/">https://www.python.org/doc/</a> </li>
-</ul>
-<p>===== 第二步：机器学习基础技巧 =====
-吴恩达在 Coursera 上的机器学习课程内容往往好评如潮；</p>
-<p>我的建议是浏览前一个学生在线记录的课堂笔记。</p>
-<p>跳过特定于 Octave（一个类似于 Matlab 的与你 Python 学习无关的语言）的笔记。</p>
-<ul>
-<li>学习吴恩达的机器学习课程：<a href="http://suo.im/2o1uD">http://suo.im/2o1uD</a> </li>
-<li>吴恩达课程的非官方笔记：<a href="http://www.holehouse.org/mlclass/">http://www.holehouse.org/mlclass/</a> </li>
-<li>Tom Mitchell 的机器学习课程：<a href="http://suo.im/497arw">http://suo.im/497arw</a> </li>
-</ul>
-<p>===== 第三步：科学计算 Python 软件包概述 =====
-科学 Python 库（scientific Python libraries）可用于执行基本的机器学习任务</p>
-<ul>
-<li>numpy——主要对其 N 维数组对象有用 <a href="http://www.numpy.org/">http://www.numpy.org/</a> </li>
-<li>pandas——Python 数据分析库，包括数据框架（dataframes）等结构 <a href="http://pandas.pydata.org/">http://pandas.pydata.org/</a> </li>
-<li>matplotlib——一个 2D 绘图库，可产生出版物质量的图表 <a href="http://matplotlib.org/">http://matplotlib.org/</a> </li>
-<li>scikit-learn——用于数据分析和数据挖掘人物的机器学习算法 <a href="http://scikit-learn.org/stable/">http://scikit-learn.org/stable/</a> </li>
-</ul>
-<p>学习这些库的材料：</p>
-<ul>
-<li>Scipy Lecture Notes，来自 Gaël Varoquaux、Emmanuelle Gouillart 和 Olav Vahtras：<a href="http://www.scipy-lectures.org/">http://www.scipy-lectures.org/</a> </li>
-<li>pandas ：10 Minutes to Pandas：<a href="http://suo.im/4an6gY">http://suo.im/4an6gY</a> </li>
-</ul>
-<p>===== 第四步：使用 Python 学习机器学习 =====</p>
-<p>首先检查一下准备情况</p>
-<ul>
-<li>Python：就绪</li>
-<li>机器学习基本材料：就绪</li>
-<li>Numpy：就绪</li>
-<li>Pandas：就绪</li>
-<li>Matplotlib：就绪</li>
-</ul>
-<p>现在是时候使用 Python 机器学习标准库 scikit-learn 来实现机器学习算法了。</p>
-<p>[[scikit-learn 流程图| 流程图]]</p>
-<p>下面许多的教程和训练都是使用 iPython (Jupyter) Notebook 完成的，iPython Notebook 是执行 Python 语句的交互式环境。iPython Notebook 可以很方便地在网上找到或下载到你的本地计算机。</p>
-<p>来自斯坦福的 iPython Notebook 概览：<a href="http://cs231n.github.io/ipython-tutorial/">http://cs231n.github.io/ipython-tutorial/</a></p>
-<p>同样也请注意，以下的教程是由一系列在线资源所组成。如果你感觉课程有什么不合适的，可以和作者交流。我们第一个教程就是从 scikit-learn 开始的，我建议你们在继续完成教程前可以按顺序看一看以下的文章。</p>
-<p>下面是一篇是对 scikit-learn 简介的文章，scikit-learn 是 Python 最常用的通用机器学习库，其覆盖了 K 近邻算法：</p>
-<p>Jake VanderPlas 写的 scikit-learn 简介：<a href="http://suo.im/3bMdEd">http://suo.im/3bMdEd</a></p>
-<p>下面的会更加深入、扩展的一篇简介，包括了从著名的数据库开始完成一个项目：</p>
-<p>Randal Olson 的机器学习案例笔记：<a href="http://suo.im/RcPR6">http://suo.im/RcPR6</a></p>
-<p>下一篇关注于在 scikit-learn 上评估不同模型的策略，包括训练集/测试集的分割方法：</p>
-<p>Kevin Markham 的模型评估：<a href="http://suo.im/2HIXDD">http://suo.im/2HIXDD</a></p>
-<p>===== 第五步：Python 上实现机器学习的基本算法 =====</p>
-<p>在有了 scikit-learn 的基本知识后，我们可以进一步探索那些更加通用和实用的算法。我们从非常出名的 K 均值聚类（k-means clustering）算法开始，它是一种非常简单和高效的方法，能很好地解决非监督学习问题：</p>
-<p>K-均值聚类：<a href="http://suo.im/40R8zf">http://suo.im/40R8zf</a></p>
-<p>接下来我们可以回到分类问题，并学习曾经最流行的分类算法：</p>
-<p>决策树：<a href="http://thegrimmscientist.com/tutorial-decision-trees/">http://thegrimmscientist.com/tutorial-decision-trees/</a></p>
-<p>在了解分类问题后，我们可以继续看看连续型数值预测：</p>
-<p>线性回归：<a href="http://suo.im/3EV4Qn">http://suo.im/3EV4Qn</a></p>
-<p>我们也可以利用回归的思想应用到分类问题中，即 logistic 回归：</p>
-<p>logistic 回归：<a href="http://suo.im/S2beL">http://suo.im/S2beL</a></p>
-<p>第六步：Python 上实现进阶机器学习算法</p>
-<p>我们已经熟悉了 scikit-learn，现在我们可以了解一下更高级的算法了。首先就是支持向量机，它是一种依赖于将数据转换映射到高维空间的非线性分类器。</p>
-<p>支持向量机：<a href="http://suo.im/2iZLLa">http://suo.im/2iZLLa</a></p>
-<p>随后，我们可以通过 Kaggle Titanic 竞赛检查学习作为集成分类器的随机森林：</p>
-<p>Kaggle Titanic 竞赛（使用随机森林）：<a href="http://suo.im/1o7ofe">http://suo.im/1o7ofe</a></p>
-<p>降维算法经常用于减少在问题中所使用的变量。主成份分析法就是非监督降维算法的一个特殊形式：</p>
-<p>降维算法：<a href="http://suo.im/2k5y2E">http://suo.im/2k5y2E</a></p>
-<p>在进入第七步之前，我们可以花一点时间考虑在相对较短的时间内取得的一些进展。</p>
-<p>首先使用 Python 及其机器学习库，我们不仅已经了解了一些最常见和知名的机器学习算法（k 近邻、k 均值聚类、支持向量机等），还研究了强大的集成技术（随机森林）和一些额外的机器学习任务（降维算法和模型验证技术）。除了一些基本的机器学习技巧，我们已经开始寻找一些有用的工具包。</p>
-<p>我们会进一步学习新的必要工具。</p>
-<p>===== 第七步：Python 深度学习 =====</p>
-<p>1-2.png
-神经网络包含很多层</p>
-<p>深度学习无处不在。深度学习建立在几十年前的神经网络的基础上，但是最近的进步始于几年前，并极大地提高了深度神经网络的认知能力，引起了人们的广泛兴趣。如果你对神经网络还不熟悉，KDnuggets 有很多文章详细介绍了最近深度学习大量的创新、成就和赞许。</p>
-<p>最后一步并不打算把所有类型的深度学习评论一遍，而是在 2 个先进的当代 Python 深度学习库中探究几个简单的网络实现。对于有兴趣深挖深度学习的读者，我建议从下面这些免费的在线书籍开始：</p>
-<p>神经网络与深度学习，作者 Michael Nielsen：<a href="http://neuralnetworksanddeeplearning.com/">http://neuralnetworksanddeeplearning.com/</a></p>
-<p>1.Theano</p>
-<p>链接：<a href="http://deeplearning.net/software/theano/">http://deeplearning.net/software/theano/</a></p>
-<p>Theano 是我们讲到的第一个 Python 深度学习库。看看 Theano 作者怎么说：</p>
-<p>Theano 是一个 Python 库，它可以使你有效地定义、优化和评估包含多维数组的数学表达式。</p>
-<p>下面关于运用 Theano 学习深度学习的入门教程有点长，但是足够好，描述生动，评价很高：</p>
-<p>Theano 深度学习教程，作者 Colin Raffel：<a href="http://suo.im/1mPGHe">http://suo.im/1mPGHe</a></p>
-<p>2.Caffe</p>
-<p>链接：<a href="http://caffe.berkeleyvision.org/">http://caffe.berkeleyvision.org/</a></p>
-<p>另一个我们将测试驱动的库是 Caffe。再一次，让我们从作者开始：</p>
-<p>Caffe 是一个深度学习框架，由表达、速度和模块性建构，Bwekeley 视觉与学习中心和社区工作者共同开发了 Caf fe。</p>
-<p>这个教程是本篇文章中最好的一个。我们已经学习了上面几个有趣的样例，但没有一个可与下面这个样例相竞争，其可通过 Caffe 实现谷歌的 DeepDream。这个相当精彩！掌握教程之后，可以尝试使你的处理器自如运行，就当作是娱乐。</p>
-<p>通过 Caffe 实现谷歌 DeepDream：<a href="http://suo.im/2cUSXS">http://suo.im/2cUSXS</a></p>
-<p>我并没有保证说这会很快或容易，但是如果你投入了时间并完成了上面的 7 个步骤，你将在理解大量机器学习算法以及通过流行的库（包括一些在目前深度学习研究领域最前沿的库）在 Python 中实现算法方面变得很擅长。</p>
-<p>====== 进阶篇 ======</p>
-<p>1头图.jpg
-机器学习算法</p>
-<p>本篇是使用 Python 掌握机器学习的 7 个步骤系列文章的下篇，如果你已经学习了该系列的上篇，那么应该达到了令人满意的学习速度和熟练技能；如果没有的话，你也许应该回顾一下上篇，具体花费多少时间，取决于你当前的理解水平。我保证这样做是值得的。快速回顾之后，本篇文章会更明确地集中于几个机器学习相关的任务集上。由于安全地跳过了一些基础模块——Python 基础、机器学习基础等等——我们可以直接进入到不同的机器学习算法之中。这次我们可以根据功能更好地分类教程。</p>
-<p>===== 第1步：机器学习基础回顾&一个新视角 =====</p>
-<p>上篇中包括以下几步：</p>
-<ol>
-<li>Python 基础技能</li>
-<li>机器学习基础技能</li>
-<li>Python 包概述</li>
-<li>运用 Python 开始机器学习：介绍&模型评估</li>
-<li>关于 Python 的机器学习主题：k-均值聚类、决策树、线性回归&逻辑回归</li>
-<li>关于 Python 的高阶机器学习主题：支持向量机、随机森林、PCA 降维</li>
-<li>Python 中的深度学习</li>
-</ol>
-<p>如上所述，如果你正准备从头开始，我建议你按顺序读完上篇。我也会列出所有适合新手的入门材料，安装说明包含在上篇文章中。</p>
-<p>然而，如果你已经读过，我会从下面最基础的开始：</p>
-<p>机器学习关键术语解释，作者 Matthew Mayo。地址：<a href="http://suo.im/2URQGm">http://suo.im/2URQGm</a> 
-维基百科条目：统计学分类。地址：<a href="http://suo.im/mquen">http://suo.im/mquen</a> 
-机器学习：一个完整而详细的概述，作者 Alex Castrounis。地址：<a href="http://suo.im/1yjSSq">http://suo.im/1yjSSq</a></p>
-<p>如果你正在寻找学习机器学习基础的替代或补充性方法，恰好我可以把正在看的 Shai Ben-David 的视频讲座和 Shai Shalev-Shwartz 的教科书推荐给你：</p>
-<p>Shai Ben-David 的机器学习介绍视频讲座，滑铁卢大学。地址：<a href="http://suo.im/1TFlK6">http://suo.im/1TFlK6</a> 
-理解机器学习：从理论到算法，作者 Shai Ben-David & Shai Shalev-Shwartz。地址：<a href="http://suo.im/1NL0ix">http://suo.im/1NL0ix</a></p>
-<p>记住，这些介绍性资料并不需要全部看完才能开始我写的系列文章。视频讲座、教科书及其他资源可在以下情况查阅：当使用机器学习算法实现模型时或者当合适的概念被实际应用在后续步骤之中时。具体情况自己判断。</p>
-<p>===== 第2步：更多的分类 =====</p>
-<p>我们从新材料开始，首先巩固一下我们的分类技术并引入一些额外的算法。虽然本篇文章的第一部分涵盖决策树、支持向量机、逻辑回归以及合成分类随机森林，我们还是会添加 k-最近邻、朴素贝叶斯分类器和多层感知器。</p>
-<p>101.jpg
-Scikit-learn 分类器</p>
-<p>k-最近邻（kNN）是一个简单分类器和懒惰学习者的示例，其中所有计算都发生在分类时间上（而不是提前在训练步骤期间发生）。kNN 是非参数的，通过比较数据实例和 k 最近实例来决定如何分类。</p>
-<p>使用 Python 进行 k-最近邻分类。地址：<a href="http://suo.im/2zqW0t">http://suo.im/2zqW0t</a></p>
-<p>朴素贝叶斯是基于贝叶斯定理的分类器。它假定特征之间存在独立性，并且一个类中任何特定特征的存在与任何其它特征在同一类中的存在无关。</p>
-<p>使用 Scikit-learn 进行文档分类，作者 Zac Stewart。地址：<a href="http://suo.im/2uwBm3">http://suo.im/2uwBm3</a></p>
-<p>多层感知器（MLP）是一个简单的前馈神经网络，由多层节点组成，其中每个层与随后的层完全连接。多层感知器在 Scikit-learn 版本 0.18 中作了介绍。</p>
-<p>首先从 Scikit-learn 文档中阅读 MLP 分类器的概述，然后使用教程练习实现。</p>
-<p>神经网络模型（监督式），Scikit-learn 文档。地址：<a href="http://suo.im/3oR76l">http://suo.im/3oR76l</a> 
-Python 和 Scikit-learn 的神经网络初学者指南 0.18！作者 Jose Portilla。地址：<a href="http://suo.im/2tX6rG">http://suo.im/2tX6rG</a></p>
-<p>===== 第3步：更多聚类 =====</p>
-<p>我们现在接着讲聚类，一种无监督学习形式。上篇中，我们讨论了 k-means 算法; 我们在此介绍 DBSCAN 和期望最大化（EM）。</p>
-<p>1-1 (4).jpg
-Scikit-learn聚类算法</p>
-<p>首先，阅读这些介绍性文章; 第一个是 k 均值和 EM 聚类技术的快速比较，是对新聚类形式的一个很好的继续，第二个是对 Scikit-learn 中可用的聚类技术的概述：</p>
-<p>聚类技术比较：简明技术概述，作者 Matthew Mayo。地址：<a href="http://suo.im/4ctIvI">http://suo.im/4ctIvI</a> 
-在玩具数据集中比较不同的聚类算法，Scikit-learn 文档。地址：<a href="http://suo.im/4uvbbM">http://suo.im/4uvbbM</a></p>
-<p>期望最大化（EM）是概率聚类算法，并因此涉及确定实例属于特定聚类的概率。EM 接近统计模型中参数的最大似然性或最大后验估计（Han、Kamber 和 Pei）。EM 过程从一组参数开始迭代直到相对于 k 聚类的聚类最大化。</p>
-<p>首先阅读关于 EM 算法的教程。接下来，看看相关的 Scikit-learn 文档。最后，按照教程使用 Python 自己实现 EM 聚类。</p>
-<p>期望最大化（EM）算法教程，作者 Elena Sharova。地址：<a href="http://suo.im/33ukYd">http://suo.im/33ukYd</a> 
-高斯混合模型，Scikit-learn 文档。地址：<a href="http://suo.im/20C2tZ">http://suo.im/20C2tZ</a>  。
-使用 Python 构建高斯混合模型的快速介绍，作者 Tiago Ramalho。地址：<a href="http://suo.im/4oxFsj">http://suo.im/4oxFsj</a></p>
-<p>如果高斯混合模型初看起来令人困惑，那么来自 Scikit-learn 文档的这一相关部分应该可以减轻任何多余的担心：</p>
-<p>高斯混合对象实现期望最大化（EM）算法以拟合高斯模型混合。</p>
-<p>基于密度且具有噪声的空间聚类应用（DBSCAN）通过将密集数据点分组在一起，并将低密度数据点指定为异常值来进行操作。
-首先从 Scikit-learn 的文档中阅读并遵循 DBSCAN 的示例实现，然后按照简明的教程学习：</p>
-<p>DBSCAN 聚类算法演示，Scikit-learn 文档。地址：<a href="http://suo.im/1l9tvX">http://suo.im/1l9tvX</a> 
-基于密度的聚类算法（DBSCAN）和实现。地址：<a href="http://suo.im/1LEoXC">http://suo.im/1LEoXC</a></p>
-<p>===== 第4步：更多的集成方法 =====</p>
-<p>上篇只涉及一个单一的集成方法：随机森林（RF）。RF 作为一个顶级的分类器，在过去几年中取得了巨大的成功，但它肯定不是唯一的集成分类器。我们将看看包装、提升和投票。</p>
-<p>1-1 (5).jpg
-给我一个提升</p>
-<p>首先，阅读这些集成学习器的概述，第一个是通用性的；第二个是它们与 Scikit-learn 有关：</p>
-<p>集成学习器介绍，作者 Matthew Mayo。地址：<a href="http://suo.im/cLESw">http://suo.im/cLESw</a> 
-Scikit-learn 中的集成方法，Scikit-learn 文档。地址：<a href="http://suo.im/yFuY9">http://suo.im/yFuY9</a></p>
-<p>然后，在继续使用新的集成方法之前，请通过一个新的教程快速学习随机森林：</p>
-<p>Python 中的随机森林，来自 Yhat。地址：<a href="http://suo.im/2eujI">http://suo.im/2eujI</a></p>
-<p>包装、提升和投票都是不同形式的集成分类器，全部涉及建构多个模型; 然而，这些模型由什么算法构建，模型使用的数据，以及结果如何最终组合起来，这些都会随着方案而变化。</p>
-<p>包装：从同一分类算法构建多个模型，同时使用来自训练集的不同（独立）数据样本——Scikit-learn 实现包装分类器
-提升：从同一分类算法构建多个模型，一个接一个地链接模型，以提高每个后续模型的学习——Scikit-learn 实现 AdaBoost
-投票：构建来自不同分类算法的多个模型，并且使用标准来确定模型如何最好地组合——Scikit-learn 实现投票分类器</p>
-<p>那么，为什么要组合模型？为了从一个特定角度处理这个问题，这里是偏差-方差权衡的概述，具体涉及到提升，以下是 Scikit-learn 文档：</p>
-<p>单一评估器 vs 包装：偏差-方差分解，Scikit-learn 文档。地址：<a href="http://suo.im/3izlRB">http://suo.im/3izlRB</a></p>
-<p>现在你已经阅读了关于集成学习器的一些介绍性材料，并且对几个特定的集成分类器有了基本了解，下面介绍如何从 Machine Learning Mastery 中使用 Scikit-learn 在 Python 中实现集成分类器：</p>
-<p>使用 Scikit-learn 在 Python 中实现集成机器学习算法，作者 Jason Brownlee。地址：<a href="http://suo.im/9WEAr">http://suo.im/9WEAr</a></p>
-<p>===== 第5步：梯度提升 =====</p>
-<p>下一步我们继续学习集成分类器，探讨一个当代最流行的机器学习算法。梯度提升最近在机器学习中产生了显著的影响，成为了 Kaggle 竞赛中最受欢迎和成功的算法之一。</p>
-<p>1-1 (6).jpg
-给我一个梯度提升</p>
-<p>首先，阅读梯度提升的概述：</p>
-<p>维基百科条目：梯度提升。地址：<a href="http://suo.im/TslWi">http://suo.im/TslWi</a></p>
-<p>接下来，了解为什么梯度提升是 Kaggle 竞赛中「最制胜」的方法：</p>
-<p>为什么梯度提升完美解决了诸多 Kaggle 难题？Quora，地址：<a href="http://suo.im/3rS6ZO">http://suo.im/3rS6ZO</a> 
-Kaggle 大师解释什么是梯度提升，作者 Ben Gorman。地址：<a href="http://suo.im/3nXlWR">http://suo.im/3nXlWR</a></p>
-<p>虽然 Scikit-learn 有自己的梯度提升实现，我们将稍作改变，使用 XGBoost 库，我们提到过这是一个更快的实现。</p>
-<p>以下链接提供了 XGBoost 库的一些额外信息，以及梯度提升（出于必要）：</p>
-<p>维基百科条目：XGBoost。地址：<a href="http://suo.im/2UlJ3V">http://suo.im/2UlJ3V</a> 
-Ghub 上的 XGBoost 库。地址：<a href="http://suo.im/2JeQI8">http://suo.im/2JeQI8</a> 
-XGBoost 文档。地址：<a href="http://suo.im/QRRrm">http://suo.im/QRRrm</a></p>
-<p>现在，按照这个教程把所有汇聚起来：</p>
-<p>Python 中 XGBoost 梯度提升树的实现指南，作者 Jesse Steinweg-Woods。地址：<a href="http://suo.im/4FTqD5">http://suo.im/4FTqD5</a></p>
-<p>你还可以按照这些更简洁的示例进行强化：</p>
-<p>XGBoost 在 Kaggle 上的示例（Python）。地址：<a href="http://suo.im/4F9A1J">http://suo.im/4F9A1J</a> 
-Iris 数据集和 XGBoost 简单教程，作者 Ieva Zarina。地址：<a href="http://suo.im/2Lyb1a">http://suo.im/2Lyb1a</a></p>
-<p>===== 第6步：更多的降维 =====</p>
-<p>降维是通过使用过程来获得一组主变量，将用于模型构建的变量从其初始数减少到一个减少数。</p>
-<p>有两种主要形式的降维：</p>
-<ol>
-<li>特征选择——选择相关特征的子集。地址：<a href="http://suo.im/4wlkrj">http://suo.im/4wlkrj</a> </li>
-<li>特征提取——构建一个信息性和非冗余的衍生值特征集。地址：<a href="http://suo.im/3Gf0Yw">http://suo.im/3Gf0Yw</a> </li>
-</ol>
-<p>下面是一对常用的特征提取方法。</p>
-<p>1-1 (1).jpg</p>
-<p>主成分分析（PCA）是一种统计步骤，它使用正交变换将可能相关变量的一组观测值转换为一组称为主成分的线性不相关变量值。主成分的数量小于或等于原始变量的数量。这种变换以这样的方式定义，即第一主成分具有最大可能的方差（即考虑数据中尽可能多的变率）</p>
-<p>以上定义来自 PCA 维基百科条目，如果感兴趣可进一步阅读。但是，下面的概述/教程非常彻底：</p>
-<p>主成分分析：3 个简单的步骤，作者 Sebastian Raschka。地址：<a href="http://suo.im/1ahFdW">http://suo.im/1ahFdW</a></p>
-<p>线性判别分析（LDA）是 Fisher 线性判别的泛化，是统计学、模式识别和机器学习中使用的一种方法，用于发现线性组合特征或分离两个或多个类别的对象或事件的特征。所得到的组合可以用作线性分类器，或者更常见地，用作后续分类之前的降维。</p>
-<p>LDA 与方差分析（ANOVA）和回归分析密切相关，它同样尝试将一个因变量表示为其他特征或测量的线性组合。然而，ANOVA 使用分类独立变量和连续因变量，而判别分析具有连续的独立变量和分类依赖变量（即类标签）。</p>
-<p>上面的定义也来自维基百科。下面是完整的阅读：</p>
-<p>线性判别分析——直至比特，作者 Sebastian Raschka。地址：<a href="http://suo.im/gyDOb">http://suo.im/gyDOb</a></p>
-<p>你对 PCA 和 LDA 对于降维的实际差异是否感到困惑？Sebastian Raschka 做了如下澄清：</p>
-<p>线性判别分析（LDA）和主成分分析（PCA）都是通常用于降维的线性转换技术。PCA 可以被描述为「无监督」算法，因为它「忽略」类标签，并且其目标是找到使数据集中的方差最大化的方向（所谓的主成分）。与 PCA 相反，LDA 是「监督的」并且计算表示使多个类之间的间隔最大化的轴的方向（「线性判别式」）。</p>
-<p>有关这方面的简要说明，请阅读以下内容：</p>
-<p>LDA 和 PCA 之间的降维有什么区别？作者 Sebastian Raschka。地址：<a href="http://suo.im/2IPt0U">http://suo.im/2IPt0U</a></p>
-<p>===== 第 7 步：更多的深度学习 =====</p>
-<p>上篇中提供了一个学习神经网络和深度学习的入口。如果你的学习到目前比较顺利并希望巩固对神经网络的理解，并练习实现几个常见的神经网络模型，那么请继续往下看。</p>
-<p>1-8.jpg</p>
-<p>首先，看一些深度学习基础材料：</p>
-<p>深度学习关键术语及解释，作者 Matthew Mayo
-理解深度学习的 7 个步骤，作者 Matthew Mayo。地址：<a href="http://suo.im/3QmEfV">http://suo.im/3QmEfV</a></p>
-<p>接下来，在 Google 的机器智能开源软件库 TensorFlow（一个有效的深度学习框架和现今几乎是最好的神经网络工具）尝试一些简明的概述／教程：</p>
-<p>机器学习敲门砖：任何人都能看懂的 TensorFlow 介绍（第 1、2 部分）
-入门级解读：小白也能看懂的 TensorFlow 介绍（第 3、4 部分）</p>
-<p>最后，直接从 TensorFlow 网站试用这些教程，它实现了一些最流行和常见的神经网络模型：</p>
-<p>循环神经网络，谷歌 TensorFlow 教程。地址：<a href="http://suo.im/2gtkze">http://suo.im/2gtkze</a> 
-卷积神经网络，谷歌 TensorFlow 教程。地址：<a href="http://suo.im/g8Lbg">http://suo.im/g8Lbg</a></p>
-<p>此外，目前一篇关于 7 个步骤掌握深度学习的文章正在写作之中，重点介绍使用位于 TensorFlow 顶部的高级 API，以增模型实现的容易性和灵活性。我也将在完成后在这儿添加一个链接。</p>
-<p>相关的：</p>
-<p>进入机器学习行业之前应该阅读的 5 本电子书。地址：<a href="http://suo.im/SlZKt">http://suo.im/SlZKt</a> 
-理解深度学习的 7 个步骤。地址：<a href="http://suo.im/3QmEfV">http://suo.im/3QmEfV</a> 
-机器学习关键术语及解释。地址：<a href="http://suo.im/2URQGm">http://suo.im/2URQGm</a></p>
+<li class="qp">
+    <small class="eg dp">2017-06-28</small>
+    <a href="../blog/python/">从零开始掌握python机器学习(转)</a>
+</li>
 
-  </div>
+    
+    
+<li class="qp">
+    <small class="eg dp">2017-06-28</small>
+    <a href="../blog/question/">问题收集</a>
+</li>
 
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/question/">问题收集</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      
-    
-    on 
-  </p>
-  <ul>
-<li>什么是过拟合？</li>
-<li>列出本章中提及的三种用于解决/改善过拟合的方法。</li>
-<li>什么是归纳？请用一个例子进行解释。</li>
-<li>构建一个基于你自己的案例的决策树。</li>
-<li>如果你有几百万用户，每个用户都会发生数百笔交易，这些交易存在于数十种产品中。你该如何把这些用户细分成有意义的几类？</li>
-<li>描述一个你曾经参与的项目，以及它的优点。</li>
-<li>如何处理具有高基数（high-cardinality）的类属特征？</li>
-<li>如果想要给 Twitter feed 写 summarize，你要怎么办？</li>
-<li>在应用机器学习算法之前纠正和清理数据的步骤是什么？</li>
-<li>如何测量数据点之间的距离？</li>
-<li>请定义一下方差。</li>
-<li>请描述箱形图（box plot）和直方图（histogram）之间的差异，以及它们的用例。</li>
-<li>你会使用什么功能来为用户构建推荐算法？</li>
-<li>选择任何一个你真正喜欢的产品或应用程序，并描述如何改善它。</li>
-<li>如何在分布中发现异常？</li>
-<li>如何检查分布中的某个趋势是否是由于异常产生的？</li>
-<li>你会考虑用什么指标来跟踪 Uber 付费广告策略在吸引新用户上是否有效？然后，你想用什么办法估算出理想的客户购置成本？</li>
-<li>如何估算 Uber 对交通和驾驶环境造成的影响？</li>
-<li>请解释 REST 是什么。（大数据工程师）</li>
-<li>为什么要使用特征选择（feature selection）？</li>
-<li>如果两个预测变量高度相关，它们对逻辑回归系数的影响是什么？系数的置信区间是什么？</li>
-<li>高斯混合模型（Gaussian Mixture Model）和 K-Means 之间有什么区别？</li>
-<li>在 K-Means 中如何拾取 k？</li>
-<li>你如何知道高斯混合模型是不是适用的？</li>
-<li>假设聚类模型的标签是已知的，你如何评估模型的性能？</li>
-<li>你有哪些引以为豪的机器学习项目？</li>
-<li>随便找一个机器学习算法，然后描述它。</li>
-<li>请解释 Gradient Boosting 是如何工作的。</li>
-<li>（对数据挖掘工程师）请解释决策树模型。</li>
-<li>（对数据挖掘工程师）什么是神经网络？</li>
-<li>请解释偏差方差权衡（Bias-Variance Tradeoff）。</li>
-<li>如何处理不平衡二进制分类？</li>
-<li>L1 和 L2 正则化之间有什么区别？</li>
-<li>你会通过哪种特征来预测 Uber 司机是否会接受订单请求？你会使用哪种监督学习算法来解决这个问题，如何比较算法的结果？</li>
-<li>点出及描述三种不同的内核函数，在哪些情况下使用哪种？</li>
-<li>随意解释机器学习里的一种方法。</li>
-<li>如何应付稀疏数据？</li>
-<li>如何防止过拟合（overfitting）？</li>
-<li>如何处理数据中的离群值？</li>
-<li>如何评估逻辑回归与简单线性回归模型预测的性能？</li>
-<li>监督学习和无监督学习有什么区别？</li>
-<li>什么是交叉验证（cross-validation），为什么要使用它？</li>
-<li>用于评估预测模型的矩阵的名称是什么？</li>
-<li>逻辑回归系数和胜算比（Odds Ratio）之间存在什么关系？</li>
-<li>主成分分析（PCA）和线性和二次判别分析（LDA 和 QDA）之间的关系是什么？</li>
-<li>如果你有一个因变量分类，又有一个连续自变量的混合分类，你将使用什么算法，方法或工具进行分析？</li>
-<li>（对行业分析师）逻辑与线性回归有什么区别？如何避免局部极小值？</li>
+    	
 </ul>
-<p>Salesforce</p>
-<ol>
-<li><p>你会使用哪些数据和模型来测量损耗/流失？如何测试模型性能？</p>
-</li>
-<li><p>假设我是一名非技术人员，请向我解释一种机器学习算法。</p>
-</li>
-</ol>
-<p>Capital One（一家美国银行）</p>
-<ol>
-<li><p>如何构建一个模型来预测信用卡诈骗？</p>
-</li>
-<li><p>如何处理丢失或不良数据？</p>
-</li>
-<li><p>如何从已存在的特征中导出新的特征？</p>
-</li>
-<li><p>如果你试图预测客户的性别，但只有 100 个数据点，可能会出现什么问题？</p>
-</li>
-<li><p>在拥有两年交易历史的情况下，哪些特征可以用来预测信用风险？</p>
-</li>
-<li><p>请设计一个用来下井字棋的人工智能程序。</p>
-</li>
-</ol>
-<p>Zillow</p>
-<ol>
-<li><p>请解释过拟合，以及如何防止过拟合。</p>
-</li>
-<li><p>为什么 SVM 需要在支持向量之间最大化边缘？</p>
-</li>
-</ol>
-<p>Hadoop</p>
-<p>Twitter</p>
-<ol>
-<li>如何使用 Map/Reduce 将非常大的图形分割成更小的块，并根据数据的快速/动态变化并行计算它们的边缘？</li>
-</ol>
-<p>2.（对数据工程师）给定一个列表：123, 345234, 678345, 123…其中第一列是粉丝的 ID，第二列是被粉者的 ID。查找所有相互后续对（上面的示例中的对是 123，345）。当列表超出内存时，如何使用 Map / Reduce 来解决问题？</p>
-<p>Captial One</p>
-<p>1.（对数据工程师）什么是 Hadoop 序列化（serialization）？</p>
-<ol>
-<li>解释一个简单的 Map / Reduce 问题。</li>
-</ol>
-<p>Hive</p>
-<p>领英</p>
-<p>1.（对数据工程师）请编写返回情感分数的 Hive UDF。例如，假如好=1，坏=-1，平均数=0，那么对餐厅做评价时因为「食物好，服务差」，你的分数可能为 1 - 1 = 0</p>
-<p>Spark</p>
-<p>Captial One</p>
-<p>1.（对数据工程师）用 Scala 语言，RDD 在 Spark 中是如何工作的？</p>
-<p>统计和概率问题</p>
-<p>谷歌</p>
-<ol>
-<li><p>假设我是一名非技术人员，请向我解释一下交叉验证（Cross-validation）。</p>
-</li>
-<li><p>请描述一下非正态概率分布，随后告诉我们它该如何应用？</p>
-</li>
-</ol>
-<p>微软</p>
-<p>1.（对数据挖掘）请解释异方差（heteroskedasticity）是什么，以及如何解决它。</p>
-<p>Twitter</p>
-<ol>
-<li>在给定 Twitter 用户数据的情况下，你该如何衡量参与度？</li>
-</ol>
-<p>Uber</p>
-<ol>
-<li><p>时间序列预测技术有什么不同？</p>
-</li>
-<li><p>解释原理组件分析（Principle Component Analysis，PCA）和 PCA 使用的方程。</p>
-</li>
-<li><p>如何解决多重共线性（Multicollinearity）？</p>
-</li>
-</ol>
-<p>4.（对分析师）请写一个方程，优化我们在 Twitter 和 Facebook 上的广告费用支出。</p>
-<p>Facebook</p>
-<ol>
-<li>在一副牌中抽取两张，出现同一花色的概率是多少？</li>
-</ol>
-<p>IBM</p>
-<ol>
-<li>什么是 p-value 和置信区间？</li>
-</ol>
-<p>Capital One</p>
-<p>1.（对数据分析师）如果你有 70 个红色弹珠，绿色和红色弹珠的比例是 2 比 7，有多少绿色弹珠？</p>
-<ol>
-<li><p>纽约市的通勤数据看起来应该遵从什么分布？</p>
-</li>
-<li><p>一个骰子，在扔 6 次的情况下出现 1 个 6 的几率，与扔 12 次的情况下出现至少两个 6 的几率，和扔 600 次出现至少 100 次 6 的几率相比哪个大？</p>
-</li>
-</ol>
-<p>Paypal</p>
-<ol>
-<li>什么是中心极限定理（Central Limit Theorem），如何证明它？它的应用方向是什么？</li>
-</ol>
-<p>编程和算法</p>
-<p>谷歌</p>
-<p>1.（对数据分析师）请写一个程序可以判定二叉树的高度。</p>
-<p>微软</p>
-<ol>
-<li>请创建一个函数检查一个词是否具有回文结构。</li>
-</ol>
-<p>Twitter</p>
-<ol>
-<li><p>请构建一个幂集（power set）。</p>
-</li>
-<li><p>请问如何在一个巨大的数据集中找到中值？</p>
-</li>
-</ol>
-<p>Uber</p>
-<p>1.（对数据工程师）编写一个函数用来计算给定数字的平方根（2 个小数点精度）。随后：避免冗余计算，现在使用缓存机制优化你的功能。</p>
-<p>Facebook</p>
-<ol>
-<li><p>假设给定两个二进制字符串，写一个函数将它们添加在一起，而不使用任何内置的字符串到 int 转换或解析工具。例如：如果给函数二进制字符串 100 和 111，它应该返回 1011。你的解决方案的空间和时间复杂性如何？</p>
-</li>
-<li><p>编写一个函数，它接受两个已排序的列表，并在排序列表中返回它们的并集。</p>
-</li>
-</ol>
-<p>领英</p>
-<p>1.（对数据工程师）请编写一些代码来确定字符串中的左右括号是否是平衡的？</p>
-<ol>
-<li><p>如何找到二叉搜索树中第二大的元素？</p>
-</li>
-<li><p>请编写一个函数，它接受两个排序的向量，并返回一个排序的向量。</p>
-</li>
-<li><p>如果你有一个输入的数字流，如何在运行过程中找到最频繁出现的数字？</p>
-</li>
-<li><p>编写一个函数，将一个数字增加到另一个数字，就像 pow（）函数一样。</p>
-</li>
-<li><p>将大字符串拆分成有效字段并将它们存储在 dictionary 中。如果字符串不能拆分，返回 false。你的解决方案的复杂性如何？</p>
-</li>
-</ol>
-<p>Captial One</p>
-<p>1.（对数据工程师）如何「拆散」两个数列（就像 SQL 中的 JOIN 反过来）？</p>
-<ol>
-<li><p>请创建一个用于添加的函数，数字表示为两个链表。</p>
-</li>
-<li><p>请创建一个计算矩阵的函数。</p>
-</li>
-<li><p>如何使用 Python 读取一个非常大的制表符分隔的数字文件，来计算每个数字出现的频率？</p>
-</li>
-</ol>
-<p>Paypal</p>
-<ol>
-<li><p>请编写一个函数，让它能在 O（n）的时间内取一个句子并逆向打印出来。</p>
-</li>
-<li><p>请编写一个函数，从一个数组中拾取，将它们分成两个可能的数组，然后打印两个数组之间的最大差值（在 O(n) 时间内）。</p>
-</li>
-<li><p>请编写一个执行合并排序的程序。</p>
-</li>
-</ol>
-<p>SQL 问题</p>
-<p>微软</p>
-<p>1.（对数据分析师）定义和解释聚簇索引和非聚簇索引之间的差异。</p>
-<p>2.（对数据分析师）返回表的行计数有哪些不同的方法？</p>
-<p>Facebook</p>
-<p>1.（对数据工程师）如果给定一个原始数据表，如何使用 SQL 执行 ETL（提取，转换，加载）以获取所需格式的数据？</p>
-<ol>
-<li>如何编写 SQL 查询来计算涉及两个连接的某个属性的频率表？如果你想要 ORDER BY 或 GROUP BY 一些属性，你需要做什么变化？你该怎么解释 NULL？</li>
-</ol>
-<p>领英</p>
-<p>1.（对数据工程师）如何改进 ETL（提取，转换，加载）的吞吐量？</p>
-<p>智力游戏</p>
-<p>谷歌</p>
-<ol>
-<li>假设你有 10 包弹球，每包里面都是 10 个弹球。如果其中一包的重量和其他的不同，但你只能进行一次称重，你该用什么办法？</li>
-</ol>
-<p>Facebook</p>
-<ol>
-<li><p>你打算坐飞机去西雅图，想知道是不是需要带伞，于是你分别打电话给三位在西雅图的朋友。每个朋友都有 2/3 的几率说真话，1/3 的几率在骗你。如果他们都说「会下雨」，西雅图下雨的概率是多少？</p>
-</li>
-<li><p>假如在一个等边三角形的三个角上都有一只蚂蚁，每只随机选择方向然后直走一直到另一个边缘，三只蚂蚁互相不交汇的几率是多少？如果有 n 只蚂蚁在 n 角形中，概率又是多少？</p>
-</li>
-<li><p>在 100! 的结果里有多少个零？</p>
-</li>
-</ol>
-<p>Uber</p>
-<ol>
-<li>想象一下你在一家医院工作。患者来就诊的频率符合泊松分布，而医生照顾患者的频率符合均匀分布。请写一个函数或一段代码来输出患者的平均等待时间和医生在某日的参与度。</li>
-</ol>
-<p>领英</p>
-<ol>
-<li>你正在攀爬一个 n 阶的楼梯，你可以采取任何数量的 k 个步骤。你到达楼梯顶部有多少不同的方式？（这是楼梯问题的修改版）</li>
-</ol>
+</div>
 
-  </div>
-
-  
-
-  
   <div class="pagination">
     
       <span class="disabled">&laquo; Previous</span>
@@ -534,8 +117,20 @@ Iris 数据集和 XGBoost 简单教程，作者 Ieva Zarina。地址：<a href="
   </div>
 
 
+    </div>
   </div>
-  <footer>
-    &copy; Copyright 2017 by fainle.
-  </footer>
-</body>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+          while(BS.loader.length){(BS.loader.pop())()}
+        }
+      })
+    </script>
+  </body>
+</html>

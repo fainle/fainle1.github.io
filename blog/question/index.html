@@ -1,38 +1,99 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="../../static/style.css">
-<title>问题收集 — fainle</title>
-<body>
-  <header>
-    <h1>fainle</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li><a href="../../">Welcome</a></li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>问题收集 — fainle</title>
+    <!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'> -->
+       <link rel="stylesheet" href="../../static/toolkit.css">
+    <link rel="stylesheet" href="../../static/application.css">
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+    </style>
+  </head>
+<body class="anf">
+<div class="anp" id="app-growl"></div>
+<nav class="ck pd ot app-navbar">
+  <div class="by">
+    <div class="os">
+      <button type="button" class="ov collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="cv">Toggle navigation</span>
+        <span class="ow"></span>
+        <span class="ow"></span>
+        <span class="ow"></span>
+      </button>
+      <a class="e" href="/">
+        <img src="../../static/brand-white.png" alt="brand">
+      </a>
+    </div>
+    <div class="f collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav st">
+        <li><a href="../../">首页</a></li>
         
-          <li class="active"><a href="../../blog/">Blog</a></li>
+          <li class="active"><a href="../../blog/">文章</a></li>
         
-          <li><a href="../../projects/">Projects</a></li>
+          <li><a href="../../projects/">项目</a></li>
         
-          <li><a href="../../about/">About</a></li>
+          <li><a href="../../about/">关于我</a></li>
         
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    
+        </ul>
+
+       <!--  <ul class="nav navbar-nav oh ald st">
+          <li >
+            <a class="g" href="notifications/index.html">
+              <span class="h wr"></span>
+            </a>
+          </li>
+          <li>
+            <button class="cg fm oy ank" data-toggle="popover">
+              <img class="cu" src="assets/img/avatar-dhg.png">
+            </button>
+          </li>
+        </ul>
+
+        <form class="ox oh i" role="search">
+          <div class="et">
+            <input type="text" class="form-control" data-action="grow" placeholder="Search">
+          </div>
+        </form>
+
+        <ul class="nav navbar-nav su sv sw">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="profile/index.html">分类</a></li>
+          <li><a href="docs/index.html">标签</a></li>
+          <li><a href="#" data-action="growl">Growl</a></li>
+          <li><a href="login/index.html">Logout</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav hidden">
+          <li><a href="#" data-action="growl">Growl</a></li>
+          <li><a href="login/index.html">Logout</a></li>
+        </ul> -->
+      </div>
+  </div>
+</nav>
+<div class="by ams">
+  <div class="gd">
+    <div class="ha100">
+     
   
-  <div class="blog-post">
-  
-    <h2>问题收集</h2>
-  
-  <p class="meta">
-    written by
-    
-      
-    
-    on 
-  </p>
-  <ul>
+<ul class="ca qp anw">
+    <li class="qg b amk">
+    <div class="qo">
+        <small class="eg dp">2017-06-28</small>
+        <h1>问题收集</h1>
+    </div>
+    <ul>
 <li>什么是过拟合？</li>
 <li>列出本章中提及的三种用于解决/改善过拟合的方法。</li>
 <li>什么是归纳？请用一个例子进行解释。</li>
@@ -261,11 +322,24 @@
 <li>你正在攀爬一个 n 阶的楼梯，你可以采取任何数量的 k 个步骤。你到达楼梯顶部有多少不同的方式？（这是楼梯问题的修改版）</li>
 </ol>
 
-  </div>
+    </li>
+</ul>
 
 
+    </div>
   </div>
-  <footer>
-    &copy; Copyright 2017 by fainle.
-  </footer>
-</body>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+          while(BS.loader.length){(BS.loader.pop())()}
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,45 +1,104 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="../../static/style.css">
-<title>从零开始掌握python机器学习(转) — fainle</title>
-<body>
-  <header>
-    <h1>fainle</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li><a href="../../">Welcome</a></li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>从零开始掌握python机器学习(转) — fainle</title>
+    <!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'> -->
+       <link rel="stylesheet" href="../../static/toolkit.css">
+    <link rel="stylesheet" href="../../static/application.css">
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+    </style>
+  </head>
+<body class="anf">
+<div class="anp" id="app-growl"></div>
+<nav class="ck pd ot app-navbar">
+  <div class="by">
+    <div class="os">
+      <button type="button" class="ov collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="cv">Toggle navigation</span>
+        <span class="ow"></span>
+        <span class="ow"></span>
+        <span class="ow"></span>
+      </button>
+      <a class="e" href="/">
+        <img src="../../static/brand-white.png" alt="brand">
+      </a>
+    </div>
+    <div class="f collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav st">
+        <li><a href="../../">首页</a></li>
         
-          <li class="active"><a href="../../blog/">Blog</a></li>
+          <li class="active"><a href="../../blog/">文章</a></li>
         
-          <li><a href="../../projects/">Projects</a></li>
+          <li><a href="../../projects/">项目</a></li>
         
-          <li><a href="../../about/">About</a></li>
+          <li><a href="../../about/">关于我</a></li>
         
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    
+        </ul>
+
+       <!--  <ul class="nav navbar-nav oh ald st">
+          <li >
+            <a class="g" href="notifications/index.html">
+              <span class="h wr"></span>
+            </a>
+          </li>
+          <li>
+            <button class="cg fm oy ank" data-toggle="popover">
+              <img class="cu" src="assets/img/avatar-dhg.png">
+            </button>
+          </li>
+        </ul>
+
+        <form class="ox oh i" role="search">
+          <div class="et">
+            <input type="text" class="form-control" data-action="grow" placeholder="Search">
+          </div>
+        </form>
+
+        <ul class="nav navbar-nav su sv sw">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="profile/index.html">分类</a></li>
+          <li><a href="docs/index.html">标签</a></li>
+          <li><a href="#" data-action="growl">Growl</a></li>
+          <li><a href="login/index.html">Logout</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav hidden">
+          <li><a href="#" data-action="growl">Growl</a></li>
+          <li><a href="login/index.html">Logout</a></li>
+        </ul> -->
+      </div>
+  </div>
+</nav>
+<div class="by ams">
+  <div class="gd">
+    <div class="ha100">
+     
   
-  <div class="blog-post">
-  
-    <h2>从零开始掌握python机器学习(转)</h2>
-  
-  <p class="meta">
-    written by
-    
-      fainle
-    
-    on 
-  </p>
-  <blockquote><p>转载于 [[<a href="https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4|https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4">https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4|https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4</a>]]</p>
-<p>原文可参阅：<a href="http://suo.im/KUWgl">http://suo.im/KUWgl</a> 和 <a href="http://suo.im/96wD3。">http://suo.im/96wD3。</a></p>
+<ul class="ca qp anw">
+    <li class="qg b amk">
+    <div class="qo">
+        <small class="eg dp">2017-06-28</small>
+        <h1>从零开始掌握python机器学习(转)</h1>
+    </div>
+    <blockquote><p>转载于 [[<a href="https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4|https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4">https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4|https://www.jiqizhixin.com/articles/6b42088a-3f36-4a57-b060-4a362993dea4</a>]]
+原文可参阅：<a href="http://suo.im/KUWgl">http://suo.im/KUWgl</a> 和 <a href="http://suo.im/96wD3。">http://suo.im/96wD3。</a></p>
 </blockquote>
-<p>====== 基础篇 ======
-===== 第一步：基本 Python 技能 =====</p>
-<p>首先，你需要安装 Python。</p>
-<p>建议你安装 Anaconda。</p>
-<p>其也包含了 iPython Notebook，这是一个用在我们许多教程中的交互式环境。</p>
+<h3>基础篇</h3>
+<h4>第一步：基本 Python 技能</h4>
+<p>首先，你需要安装 Python。建议你安装 Anaconda。其也包含了 iPython Notebook，这是一个用在我们许多教程中的交互式环境。</p>
 <p>免费在线书籍</p>
 <ul>
 <li>Learn Python the Hard Way，作者 Zed A. Shaw <a href="https://learnpythonthehardway.org/book/">https://learnpythonthehardway.org/book/</a> </li>
@@ -48,8 +107,8 @@
 <li>在 Y 分钟内学会 X（X=Python）：<a href="http://suo.im/zm6qX">http://suo.im/zm6qX</a> </li>
 <li>Python 文档：<a href="https://www.python.org/doc/">https://www.python.org/doc/</a> </li>
 </ul>
-<p>===== 第二步：机器学习基础技巧 =====
-吴恩达在 Coursera 上的机器学习课程内容往往好评如潮；</p>
+<h4>第二步：机器学习基础技巧</h4>
+<p>吴恩达在 Coursera 上的机器学习课程内容往往好评如潮；</p>
 <p>我的建议是浏览前一个学生在线记录的课堂笔记。</p>
 <p>跳过特定于 Octave（一个类似于 Matlab 的与你 Python 学习无关的语言）的笔记。</p>
 <ul>
@@ -57,8 +116,8 @@
 <li>吴恩达课程的非官方笔记：<a href="http://www.holehouse.org/mlclass/">http://www.holehouse.org/mlclass/</a> </li>
 <li>Tom Mitchell 的机器学习课程：<a href="http://suo.im/497arw">http://suo.im/497arw</a> </li>
 </ul>
-<p>===== 第三步：科学计算 Python 软件包概述 =====
-科学 Python 库（scientific Python libraries）可用于执行基本的机器学习任务</p>
+<h4>第三步：科学计算 Python 软件包概述</h4>
+<p>科学 Python 库（scientific Python libraries）可用于执行基本的机器学习任务</p>
 <ul>
 <li>numpy——主要对其 N 维数组对象有用 <a href="http://www.numpy.org/">http://www.numpy.org/</a> </li>
 <li>pandas——Python 数据分析库，包括数据框架（dataframes）等结构 <a href="http://pandas.pydata.org/">http://pandas.pydata.org/</a> </li>
@@ -70,7 +129,7 @@
 <li>Scipy Lecture Notes，来自 Gaël Varoquaux、Emmanuelle Gouillart 和 Olav Vahtras：<a href="http://www.scipy-lectures.org/">http://www.scipy-lectures.org/</a> </li>
 <li>pandas ：10 Minutes to Pandas：<a href="http://suo.im/4an6gY">http://suo.im/4an6gY</a> </li>
 </ul>
-<p>===== 第四步：使用 Python 学习机器学习 =====</p>
+<h4>第四步：使用 Python 学习机器学习</h4>
 <p>首先检查一下准备情况</p>
 <ul>
 <li>Python：就绪</li>
@@ -256,11 +315,24 @@ Iris 数据集和 XGBoost 简单教程，作者 Ieva Zarina。地址：<a href="
 理解深度学习的 7 个步骤。地址：<a href="http://suo.im/3QmEfV">http://suo.im/3QmEfV</a> 
 机器学习关键术语及解释。地址：<a href="http://suo.im/2URQGm">http://suo.im/2URQGm</a></p>
 
-  </div>
+    </li>
+</ul>
 
 
+    </div>
   </div>
-  <footer>
-    &copy; Copyright 2017 by fainle.
-  </footer>
-</body>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+          while(BS.loader.length){(BS.loader.pop())()}
+        }
+      })
+    </script>
+  </body>
+</html>
