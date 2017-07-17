@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="-zRsv6a1dEm_qGRjBCB5sicWAfaDe8KSHfeLEw9MtFc"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>机器学习算法 — fainle</title>
+    <link rel="stylesheet" href="../../static/toolkit.css">
+    <link rel="stylesheet" href="../../static/application.css">
+    <style>
+        body {
+            width: 1px;
+            min-width: 100%;
+            *width: 100%;
+        }
+    </style>
+</head>
+<body class="anf">
+<div class="anp" id="app-growl"></div>
+<nav class="ck pd ot app-navbar">
+    <div class="by">
+        <div class="os">
+            <a class="e" href="/">
+                <img src="../../static/brand-white.png" alt="brand">
+            </a>
+        </div>
+        <div class="f collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav st">
+                <li
+                ><a href="../../">首页</a></li>
+                
+                <li
+                 class="active"><a href="../../blog/">文章</a></li>
+                
+                <li
+                ><a href="../../about/">关于我</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="by ams">
+  <div class="gd">
+    <div class="ha100">
+    	<ul class="ca qp anw">
+			
+			  <li><a href="#supervised-learning">监督学习 (supervised learning)</a><ul>
+			  <li><a href="#k-nearest-neighbors-knn">k-nearest neighbors (knn近邻算法)</a>
+			
+			  <li><a href="#linear-regression">linear regression  (线性回归)</a>
+			
+			  <li><a href="#logistic-regression-logistic">logistic regression  (logistic回归)</a>
+			
+			  <li><a href="#support-vector-machines-svm">support vector machines (svm支持向量机)</a>
+			
+			  <li><a href="#decision-tress">decision tress (决策树)</a>
+			
+			  <li><a href="#random-forests">random forests (随机森林)</a>
+			
+			  <li><a href="#neural-networks">neural networks (神经网络)</a>
+			</ul>
+			
+			  <li><a href="#unsupervised-learning">无监督学习 (unsupervised learning)</a><ul>
+			  <li><a href="#clustering">聚类(clustering)</a><ul>
+			  <li><a href="#k-means">k-means</a>
+			
+			  <li><a href="#hierarchical-cluster-analysis-hca">Hierarchical Cluster Analysis (HCA)</a>
+			
+			  <li><a href="#expectation-maximization">Expectation Maximization</a>
+			</ul>
+			
+			  <li><a href="#visualization-and-dimensionality-reduction">可视化和降维 (Visualization and dimensionality reduction)</a><ul>
+			  <li><a href="#principal-component-analysis-pca">Principal Component Analysis (PCA)</a>
+			
+			  <li><a href="#kernel-pca">Kernel PCA</a>
+			
+			  <li><a href="#locally-linear-embedding-lle">Locally-Linear Embedding (LLE)</a>
+			
+			  <li><a href="#t-distributed-stochastic-neighbor-embedding-t-sne">t-distributed Stochastic Neighbor Embedding (t-SNE)</a>
+			</ul>
+			
+			  <li><a href="#association-rule-learning">Association rule learning</a><ul>
+			  <li><a href="#apriori">Apriori</a>
+			
+			  <li><a href="#eclat">Eclat</a>
+			</ul>
+			</ul>
+			
+			  <li><a href="#semisupervised-learning">半监督学习 (semisupervised learning)</a>
+			
+			  <li><a href="#reinforcement-learning">强化学习 (reinforcement learning)</a>
+			
+		</ul>
+		
+<ul class="ca qp anw">
+    <li class="qg b amk">
+    <div class="qo">
+        <small class="eg dp">2017-07-17</small>
+        <h1>机器学习算法</h1>
+    </div>
+    <h1 id="supervised-learning">监督学习 (supervised learning)</h1><h2 id="k-nearest-neighbors-knn">k-nearest neighbors (knn近邻算法)</h2><h2 id="linear-regression">linear regression  (线性回归)</h2><h2 id="logistic-regression-logistic">logistic regression  (logistic回归)</h2><h2 id="support-vector-machines-svm">support vector machines (svm支持向量机)</h2><h2 id="decision-tress">decision tress (决策树)</h2><h2 id="random-forests">random forests (随机森林)</h2><h2 id="neural-networks">neural networks (神经网络)</h2><h1 id="unsupervised-learning">无监督学习 (unsupervised learning)</h1><h2 id="clustering">聚类(clustering)</h2><h3 id="k-means">k-means</h3><h3 id="hierarchical-cluster-analysis-hca">Hierarchical Cluster Analysis (HCA)</h3><h3 id="expectation-maximization">Expectation Maximization</h3><h2 id="visualization-and-dimensionality-reduction">可视化和降维 (Visualization and dimensionality reduction)</h2><h3 id="principal-component-analysis-pca">Principal Component Analysis (PCA)</h3><h3 id="kernel-pca">Kernel PCA</h3><h3 id="locally-linear-embedding-lle">Locally-Linear Embedding (LLE)</h3><h3 id="t-distributed-stochastic-neighbor-embedding-t-sne">t-distributed Stochastic Neighbor Embedding (t-SNE)</h3><h2 id="association-rule-learning">Association rule learning</h2><h3 id="apriori">Apriori</h3><h3 id="eclat">Eclat</h3><h1 id="semisupervised-learning">半监督学习 (semisupervised learning)</h1><h1 id="reinforcement-learning">强化学习 (reinforcement learning)</h1>
+    </li>
+</ul>
+    
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<script>
+    // execute/clear BS loaders for docs
+    $(function () {
+        if (window.BS && window.BS.loader && window.BS.loader.length) {
+            while (BS.loader.length) {
+                (BS.loader.pop())()
+            }
+        }
+    })
+</script>
+</body>
+</html>
