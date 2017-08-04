@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="-zRsv6a1dEm_qGRjBCB5sicWAfaDe8KSHfeLEw9MtFc"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Welcome — fainle</title>
+    <!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'> -->
+    <link rel="stylesheet" href="../../../static/toolkit.css">
+    <link rel="stylesheet" href="../../../static/application.css">
+    <style>
+        /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+        /* this chunk of css is not part of the toolkit :) */
+        body {
+            width: 1px;
+            min-width: 100%;
+            *width: 100%;
+        }
+    </style>
+</head>
+<body class="anf">
+<div class="anp" id="app-growl"></div>
+<nav class="ck pd ot app-navbar">
+    <div class="by">
+        <div class="os">
+            <a class="e" href="/">
+                <img src="../../../static/brand-white.png" alt="brand">
+            </a>
+        </div>
+        <div class="f collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav st">
+                <li
+                ><a href="../../../">首页</a></li>
+                
+                <li
+                 class="active"><a href="../../../blog/">文章</a></li>
+                
+                <li
+                ><a href="../../../about/">关于我</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="by ams">
+    <div class="gd">
+        <div class="ha100">
+            <ul class="ca qp anw">
+                <li class="qg b amk">
+                    <div class="qh">
+                        <div class="qo">
+                            <h4>第四课 创建测试集 Create a Test Set</h4>
+                        </div>
+                        <p>测试数据和训练数据 的比例 大概是 4:1 即 测试数据占数据集的 20%</p>
+<p>测试数据的作用是用来检查模型的准确性，避免模型数据过于拟合。（过于拟合会在新数据上表现得很糟糕）</p>
+<p>在这里我采用的是 Scikit-Learn 提供的 train_test_split 函数来切割测试数据，它支持一个随机种子发生器，这样可以保证切割的数据一致。</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="n">housing</span> <span class="o">=</span> <span class="n">load_housing_data</span><span class="p">()</span>
+
+<span class="c1"># test_size样本切割的比例 random_state 随机种子 为了每次数据保持一致</span>
+<span class="n">train_set</span><span class="p">,</span> <span class="n">test_set</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">housing</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">41</span><span class="p">)</span>
+</pre></div>
+<p>有时候还需要对数据进行一下特殊处理</p>
+<div class="highlight"><pre><span></span><span class="n">housing</span><span class="p">[</span><span class="s2">&quot;income_cat&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">housing</span><span class="p">[</span><span class="s2">&quot;median_income&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="mf">1.5</span><span class="p">)</span>
+<span class="n">housing</span><span class="p">[</span><span class="s2">&quot;income_cat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">housing</span><span class="p">[</span><span class="s2">&quot;income_cat&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>  <span class="c1"># 把大于5的数 都转换为5</span>
+</pre></div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // execute/clear BS loaders for docs
+        $(function () {
+            if (window.BS && window.BS.loader && window.BS.loader.length) {
+                while (BS.loader.length) {
+                    (BS.loader.pop())()
+                }
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
