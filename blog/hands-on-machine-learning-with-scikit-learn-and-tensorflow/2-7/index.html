@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="-zRsv6a1dEm_qGRjBCB5sicWAfaDe8KSHfeLEw9MtFc"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Welcome — fainle</title>
+    <!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'> -->
+    <link rel="stylesheet" href="../../../static/toolkit.css">
+    <link rel="stylesheet" href="../../../static/application.css">
+    <style>
+        /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+        /* this chunk of css is not part of the toolkit :) */
+        body {
+            width: 1px;
+            min-width: 100%;
+            *width: 100%;
+        }
+    </style>
+</head>
+<body class="anf">
+<div class="anp" id="app-growl"></div>
+<nav class="ck pd ot app-navbar">
+    <div class="by">
+        <div class="os">
+            <a class="e" href="/">
+                <img src="../../../static/brand-white.png" alt="brand">
+            </a>
+        </div>
+        <div class="f collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav st">
+                <li
+                ><a href="../../../">首页</a></li>
+                
+                <li
+                 class="active"><a href="../../../blog/">文章</a></li>
+                
+                <li
+                ><a href="../../../about/">关于我</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="by ams">
+    <div class="gd">
+        <div class="ha100">
+            <ul class="ca qp anw">
+                <li class="qg b amk">
+                    <div class="qh">
+                        <div class="qo">
+                            <h4>处理文本和分类属性 Handling Text and Categorical Attributes</h4>
+                        </div>
+                        <p>很多数据是文本类型，比如分类，tag之类</p>
+<p>机器学习很多统计需要的是数字，比如中位数，（文本就不能计算出中位数）。所以我们需要把文本转换为数字类型来计算。</p>
+<p>sckit-learn 的 LabelEncoder 模块可以实现快速的转换。</p>
+<p>但是有时候会遇到一种问题</p>
+<p>比如分类有5个 如果直接转换为数字 就是 0，1，2，3，4</p>
+<p>这种情况下的 中位数和均值会很不准</p>
+<p>而且 这五个分类关联性很弱的时候， 这样数字化 就会很有问题。</p>
+<p>这个时候可以尝试 OneHotEncoder 模块来做 独热码</p>
+<p>另外还可以自定义 Custom Transformers</p>
+<p>通过 BaseEstimator, TransformerMixin 两个模块实现自己的转换器</p>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // execute/clear BS loaders for docs
+        $(function () {
+            if (window.BS && window.BS.loader && window.BS.loader.length) {
+                while (BS.loader.length) {
+                    (BS.loader.pop())()
+                }
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
